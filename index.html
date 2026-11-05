@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>닥터 가물치 · Dr. Gamulchi — 암기 없는 의학</title>
+<meta name="description" content="닥터 가물치는 외우지 않아도 이해되는 의학 교육 앱을 만듭니다. 중환자실 현장 의사가 직접 만드는 임상 학습 도구.">
+<meta property="og:title" content="닥터 가물치 — 암기 없는 의학">
+<meta property="og:description" content="외우는 의학 말고, 이해하는 의학. 현장 의사가 만드는 임상 학습 앱.">
+<style>
+  :root{
+    --ink:#0f1b2d; --sub:#4a5a70; --line:#e3e8ef; --bg:#f7f9fc;
+    --accent:#0b6e4f; --accent-2:#e9f5ef; --card:#fff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR","Malgun Gothic",sans-serif;
+       color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+
+  header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{font-weight:800;font-size:20px;color:var(--ink);letter-spacing:-.3px}
+  .logo span{color:var(--accent)}
+  nav a{margin-left:20px;color:var(--sub);font-size:15px}
+
+  .hero{padding:96px 0 80px;background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+  .eyebrow{display:inline-block;background:var(--accent-2);color:var(--accent);font-weight:700;
+           font-size:13px;padding:6px 12px;border-radius:999px;margin-bottom:20px}
+  .hero h1{font-size:clamp(36px,6vw,60px);line-height:1.2;letter-spacing:-1.5px;font-weight:800}
+  .hero h1 em{font-style:normal;color:var(--accent)}
+  .hero p{margin-top:20px;font-size:clamp(16px,2.2vw,19px);color:var(--sub);max-width:640px}
+
+  section{padding:72px 0;border-top:1px solid var(--line)}
+  section h2{font-size:28px;letter-spacing:-.6px;margin-bottom:8px}
+  section .lead{color:var(--sub);margin-bottom:36px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px}
+  .card .num{font-size:13px;font-weight:800;color:var(--accent);letter-spacing:1px}
+  .card h3{font-size:19px;margin:8px 0 8px;letter-spacing:-.3px}
+  .card p{color:var(--sub);font-size:15px}
+
+  .app{display:flex;gap:20px;align-items:flex-start}
+  .app .icon{flex:0 0 56px;height:56px;border-radius:14px;background:var(--accent);color:#fff;
+             display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px}
+  .tag{display:inline-block;font-size:12px;font-weight:700;color:var(--sub);background:var(--bg);
+       border:1px solid var(--line);border-radius:6px;padding:2px 8px;margin-top:10px}
+
+  .quote{font-size:clamp(20px,3vw,26px);font-weight:700;letter-spacing:-.5px;line-height:1.5;max-width:760px}
+  .quote small{display:block;margin-top:14px;font-size:15px;font-weight:400;color:var(--sub)}
+
+  footer{background:#0f1b2d;color:#b7c2d0;padding:48px 0;font-size:14px}
+  footer .name{color:#fff;font-weight:800;font-size:16px;margin-bottom:12px}
+  footer dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin-top:8px}
+  footer dt{color:#8090a5}
+  footer a{color:#fff}
+  footer .bottom{margin-top:28px;padding-top:20px;border-top:1px solid #23324a;display:flex;
+                 justify-content:space-between;flex-wrap:wrap;gap:12px}
+  @media (max-width:560px){ nav a{margin-left:14px;font-size:14px} .hero{padding:64px 0 56px} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="./">닥터 <span>가물치</span></a>
+    <nav>
+      <a href="#philosophy">철학</a>
+      <a href="#apps">앱</a>
+      <a href="privacy.html">개인정보처리방침</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Dr. Gamulchi · Medical Education Apps</div>
+    <h1>외우는 의학 말고,<br><em>이해하는 의학.</em></h1>
+    <p>닥터 가물치는 <b>암기 없는 의학</b>을 지향합니다. 중환자실에서 환자를 보는 의사가 직접,
+       원리를 알면 저절로 기억되는 임상 학습 도구를 만듭니다.</p>
+  </div>
+</div>
+
+<section id="philosophy">
+  <div class="wrap">
+    <h2>암기 없는 의학</h2>
+    <p class="lead">숫자와 표를 외우는 대신, 왜 그런지를 보여줍니다.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="num">01</div>
+        <h3>원리 먼저</h3>
+        <p>공식과 수치보다 생리를 먼저 봅니다. 이유를 알면 따로 외울 필요가 없습니다.</p>
+      </div>
+      <div class="card">
+        <div class="num">02</div>
+        <h3>눈으로 이해</h3>
+        <p>파형, 그래프, 흐름도로 보여줍니다. 한 번 본 그림은 오래 남습니다.</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h3>현장에서 바로</h3>
+        <p>병동과 중환자실에서 폰으로 바로 꺼내 쓸 수 있게 만듭니다. 책상이 아니라 환자 옆에서 쓰는 도구입니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="apps">
+  <div class="wrap">
+    <h2>앱</h2>
+    <p class="lead">전공의, 학생, 중환자 진료를 하는 모든 의료진을 위해 만듭니다.</p>
+    <div class="grid">
+      <div class="card app">
+        <div class="icon">V</div>
+        <div>
+          <h3>Vent 파형 도감</h3>
+          <p>인공호흡기 파형을 눈으로 익히는 학습 앱. 압력·유량·용적 곡선의 이상 패턴과 원인, 대처를 한눈에 봅니다.</p>
+          <span class="tag">Google Play 출시 예정</span>
+        </div>
+      </div>
+      <div class="card app">
+        <div class="icon">S</div>
+        <div>
+          <h3>ICU 진정·진통 선택기</h3>
+          <p>환자 상황에 맞는 진정·진통 전략을 단계별로 고르는 도구. 처방 흐름을 이해하면서 결정할 수 있게 돕습니다.</p>
+          <span class="tag">웹앱</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="quote">"외워야 할 게 많다는 건, 아직 이해할 게 남았다는 뜻이다."
+      <small>— 닥터 가물치</small></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="name">닥터 가물치 (DOCTOR GAMULCHI)</div>
+    <dl>
+      <dt>대표</dt><dd>김덕희</dd>
+      <dt>사업자등록번호</dt><dd>260-20-01614</dd>
+      <dt>이메일</dt><dd><a href="mailto:drgamulchi@gmail.com">drgamulchi@gmail.com</a></dd>
+    </dl>
+    <div class="bottom">
+      <span>© 2026 Dr. Gamulchi. All rights reserved.</span>
+      <a href="privacy.html">개인정보처리방침</a>
+    </div>
+    <p style="margin-top:16px;font-size:12px;color:#8090a5">본 앱과 콘텐츠는 의료인 교육·학습용이며, 개별 환자의 진단과 치료는 담당 의료진의 판단에 따릅니다.</p>
+  </div>
+</footer>
+
+</body>
+</html>
